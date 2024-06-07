@@ -210,7 +210,7 @@ const Header = () => {
       </>
       <nav className="navbar navbar-expand-lg navbar-light sticky-top">
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/Grocery-react/">
             <img
               src={Grocerylogo}
               style={{ width: 200, marginBottom: 10, marginLeft: "-15px" }}
@@ -302,7 +302,7 @@ const Header = () => {
                 </li>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/Grocery-react/">
                   Home
                 </Link>
               </li>
