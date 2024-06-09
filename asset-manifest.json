@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/Grocery-react/static/css/main.b40273a6.css",
-    "main.js": "/Grocery-react/static/js/main.0355eb69.js",
+    "main.js": "/Grocery-react/static/js/main.edb2dd5c.js",
     "static/js/453.19399770.chunk.js": "/Grocery-react/static/js/453.19399770.chunk.js",
     "static/media/map.png": "/Grocery-react/static/media/map.782e7890e48d971d1984.png",
     "static/media/blog-img-2.jpg": "/Grocery-react/static/media/blog-img-2.69e5e73301d9616ba8c6.jpg",
     "static/media/blog-img-1.jpg": "/Grocery-react/static/media/blog-img-1.3e2f37267e1d1d5c8c75.jpg",
     "static/media/blog-img-6.jpg": "/Grocery-react/static/media/blog-img-6.4ab1b9036bef8d37cdb6.jpg",
     "static/media/blog-img-4.jpg": "/Grocery-react/static/media/blog-img-4.6005fe13b402cfa282c4.jpg",
+    "static/media/blog-img-3.jpg": "/Grocery-react/static/media/blog-img-3.38071dbfe781790d6eb2.jpg",
     "static/media/blog-img-7.jpg": "/Grocery-react/static/media/blog-img-7.604557b27b8afc5a42b6.jpg",
     "static/media/slider-2.jpg": "/Grocery-react/static/media/slider-2.92200ddb54f84e0e8c71.jpg",
     "static/media/blog-img-9.jpg": "/Grocery-react/static/media/blog-img-9.98a143646ac4dddbdde0.jpg",
@@ -21,6 +22,7 @@
     "static/media/fa-brands-400.ttf": "/Grocery-react/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
     "static/media/grocery-banner-2.jpg": "/Grocery-react/static/media/grocery-banner-2.7a4a78a90acc3d5847cb.jpg",
     "static/media/fa-solid-900.woff2": "/Grocery-react/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/signup-g.svg": "/Grocery-react/static/media/signup-g.118ff8cac8e5109813c4bf9a478ad3ed.svg",
     "static/media/fa-brands-400.woff2": "/Grocery-react/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
     "static/media/iphone-2.png": "/Grocery-react/static/media/iphone-2.b31c6aac16c253516728.png",
     "static/media/menu-banner.jpg": "/Grocery-react/static/media/menu-banner.7c40d45b48b2a74a0f58.jpg",
@@ -40,17 +42,24 @@
     "static/media/category-dairy-bread-eggs.jpg": "/Grocery-react/static/media/category-dairy-bread-eggs.7e8b15268d13d80db506.jpg",
     "static/media/category-tea-coffee-drinks.jpg": "/Grocery-react/static/media/category-tea-coffee-drinks.503fca9258874d96d8de.jpg",
     "static/media/product-img-4.jpg": "/Grocery-react/static/media/product-img-4.46558e8986762a8644a7.jpg",
+    "static/media/signin-g.svg": "/Grocery-react/static/media/signin-g.e39d03ee5ceecb2fbc2eefbe0a8fdac9.svg",
     "static/media/category-chicken-meat-fish.jpg": "/Grocery-react/static/media/category-chicken-meat-fish.bcdc3b0c90f7cdf8dcd5.jpg",
     "static/media/category-bakery-biscuits.jpg": "/Grocery-react/static/media/category-bakery-biscuits.e2f24edf5b1bb108100a.jpg",
     "static/media/category-atta-rice-dal.jpg": "/Grocery-react/static/media/category-atta-rice-dal.8ac2fccc8a5d3b611472.jpg",
     "static/media/category-baby-care.jpg": "/Grocery-react/static/media/category-baby-care.4ead5f5d75bf0df89964.jpg",
     "static/media/product-img-3.jpg": "/Grocery-react/static/media/product-img-3.40904081faf6143e4116.jpg",
+    "static/media/fp-g.svg": "/Grocery-react/static/media/fp-g.2dc8f99214e96e1b85524fb8f668903b.svg",
+    "static/media/product-img-16.jpg": "/Grocery-react/static/media/product-img-16.1dda2f7c4e200e50873c.jpg",
     "static/media/product-img-2.jpg": "/Grocery-react/static/media/product-img-2.8ccf896f1ec7a84759cf.jpg",
+    "static/media/product-img-18.jpg": "/Grocery-react/static/media/product-img-18.a1eb94adc5d02d527452.jpg",
     "static/media/product-img-6.jpg": "/Grocery-react/static/media/product-img-6.0e5faf24961060a800c7.jpg",
     "static/media/fa-regular-400.woff2": "/Grocery-react/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
     "static/media/product-img-13.jpg": "/Grocery-react/static/media/product-img-13.2c5b76848147d7f4ebdf.jpg",
+    "static/media/product-img-17.jpg": "/Grocery-react/static/media/product-img-17.baf0bd12384f792923eb.jpg",
     "static/media/store-graphics.svg": "/Grocery-react/static/media/store-graphics.bafe661dfe0eb13a716f19e0b391d3d3.svg",
+    "static/media/product-img-15.jpg": "/Grocery-react/static/media/product-img-15.e5290e615222b45cd00d.jpg",
     "static/media/product-img-11.jpg": "/Grocery-react/static/media/product-img-11.5d933e067989fdbc2d44.jpg",
+    "static/media/product-img-19.jpg": "/Grocery-react/static/media/product-img-19.80fa78a25a45060b7b76.jpg",
     "static/media/appstore-btn.svg": "/Grocery-react/static/media/appstore-btn.54e46b3689a19a36d49b01b7d189103e.svg",
     "static/media/american-express.svg": "/Grocery-react/static/media/american-express.33e7f005713f6ceb212ba5b6d61421c2.svg",
     "static/media/cleaning-essentials.png": "/Grocery-react/static/media/cleaning-essentials.39926da373f2f9c276ed.png",
@@ -91,11 +100,11 @@
     "static/media/refresh-cw.svg": "/Grocery-react/static/media/refresh-cw.43544612fa4d22ea9b0bd3e62890ff7b.svg",
     "static/media/clock.svg": "/Grocery-react/static/media/clock.8472f2c480849ff2105d07416f1bb498.svg",
     "main.b40273a6.css.map": "/Grocery-react/static/css/main.b40273a6.css.map",
-    "main.0355eb69.js.map": "/Grocery-react/static/js/main.0355eb69.js.map",
+    "main.edb2dd5c.js.map": "/Grocery-react/static/js/main.edb2dd5c.js.map",
     "453.19399770.chunk.js.map": "/Grocery-react/static/js/453.19399770.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b40273a6.css",
-    "static/js/main.0355eb69.js"
+    "static/js/main.edb2dd5c.js"
   ]
 }
