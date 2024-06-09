@@ -10,6 +10,7 @@ import blog6 from "../../images/blog-img-6.jpg";
 import blog7 from "../../images/blog-img-7.jpg";
 import blog8 from "../../images/blog-img-8.jpg";
 import blog9 from "../../images/blog-img-9.jpg";
+import { Zoom } from "react-awesome-reveal";
 
 const BlogCategory = () => {
   // loading
@@ -62,6 +63,7 @@ const BlogCategory = () => {
                     <div className="row">
                       {/* col */}
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -74,6 +76,7 @@ const BlogCategory = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
                         </div>
@@ -104,6 +107,7 @@ const BlogCategory = () => {
                       </div>
                       {/* col */}
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             <div className="img-zoom">
@@ -116,6 +120,7 @@ const BlogCategory = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
                         </div>
@@ -146,6 +151,7 @@ const BlogCategory = () => {
                       </div>
                       {/* col */}
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -158,6 +164,7 @@ const BlogCategory = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Company</Link>
                         </div>
@@ -188,6 +195,7 @@ const BlogCategory = () => {
                       </div>
                       {/* col */}
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -200,6 +208,7 @@ const BlogCategory = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
                         </div>
@@ -230,6 +239,7 @@ const BlogCategory = () => {
                       </div>
                       {/* col */}
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -242,6 +252,7 @@ const BlogCategory = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Retailer</Link>
                         </div>
@@ -271,6 +282,7 @@ const BlogCategory = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -283,6 +295,7 @@ const BlogCategory = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
                         </div>
@@ -312,6 +325,7 @@ const BlogCategory = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -324,6 +338,7 @@ const BlogCategory = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
                         </div>
@@ -353,6 +368,7 @@ const BlogCategory = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -365,6 +381,7 @@ const BlogCategory = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Retailer</Link>
                         </div>
@@ -394,6 +411,7 @@ const BlogCategory = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -406,6 +424,7 @@ const BlogCategory = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
                         </div>

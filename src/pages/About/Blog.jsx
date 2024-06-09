@@ -10,6 +10,7 @@ import blog7 from "../../images/blog-img-7.jpg";
 import blog8 from "../../images/blog-img-8.jpg";
 import blog9 from "../../images/blog-img-9.jpg";
 import { MagnifyingGlass } from "react-loader-spinner";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 const Blog = () => {
   // loading
@@ -39,34 +40,7 @@ const Blog = () => {
           </div>
         ) : (
           <>
-            <>
-              {/* section */}
-              <div className="mt-4">
-                <div className="container">
-                  <div className="row ">
-                    <div className="col-12">
-                      {/* breadcrumb */}
-                      <nav aria-label="breadcrumb">
-                        <ol className="breadcrumb mb-0">
-                          <li className="breadcrumb-item">
-                            <Link to="#!">Home</Link>
-                          </li>
-                          <li className="breadcrumb-item">
-                            <Link to="#!">Blog</Link>
-                          </li>
-                          <li
-                            className="breadcrumb-item active"
-                            aria-current="page"
-                          >
-                            Freshcart Blog
-                          </li>
-                        </ol>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </>
+            
             <>
               <div>
                 {/* section */}
@@ -88,6 +62,8 @@ const Blog = () => {
                       <div className="col-12 col-md-12 col-lg-8">
                         <Link to="#!">
                           {/* img */}
+                          {/* <Slide direction="down"> */}
+                          <Fade>
                           <div className="img-zoom">
                             <img
                               src={bloglarge}
@@ -95,10 +71,14 @@ const Blog = () => {
                               className="img-fluid rounded-3 w-100"
                             />
                           </div>
+                          </Fade>
+                          {/* </Slide> */}
                         </Link>
                       </div>
                       {/* text */}
+                      
                       <div className="col-12 col-md-12 col-lg-4">
+                      <Slide direction="down">
                         <div className="ps-lg-8 mt-8 mt-lg-0">
                           <h2 className="mb-3">
                             <Link to="#!" className="text-inherit">
@@ -123,11 +103,14 @@ const Blog = () => {
                             </span>
                           </div>
                         </div>
+                        </Slide>
                       </div>
                     </div>
                     {/* row */}
                     <div className="row">
+                      
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -140,6 +123,7 @@ const Blog = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         {/* text */}
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
@@ -170,6 +154,7 @@ const Blog = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -182,6 +167,7 @@ const Blog = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         {/* text */}
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
@@ -212,6 +198,7 @@ const Blog = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -224,6 +211,7 @@ const Blog = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         {/* text */}
                         <div className="mb-3">
                           <Link to="#!">Company</Link>
@@ -254,6 +242,7 @@ const Blog = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -266,6 +255,7 @@ const Blog = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         {/* text */}
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
@@ -296,6 +286,7 @@ const Blog = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -308,6 +299,7 @@ const Blog = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Retailer</Link>
                         </div>
@@ -337,6 +329,8 @@ const Blog = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -349,6 +343,7 @@ const Blog = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         {/* text */}
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
@@ -379,6 +374,7 @@ const Blog = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -391,6 +387,7 @@ const Blog = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         {/* text */}
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
@@ -421,6 +418,7 @@ const Blog = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -433,6 +431,7 @@ const Blog = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         {/* text */}
                         <div className="mb-3">
                           <Link to="#!">Retailer</Link>
@@ -463,6 +462,7 @@ const Blog = () => {
                         </div>
                       </div>
                       <div className="col-12 col-md-6 col-lg-4 mb-8">
+                      <Zoom>
                         <div className="mb-4">
                           <Link to="#!">
                             {/* img */}
@@ -475,6 +475,7 @@ const Blog = () => {
                             </div>
                           </Link>
                         </div>
+                        </Zoom>
                         <div className="mb-3">
                           <Link to="#!">Recipes</Link>
                         </div>

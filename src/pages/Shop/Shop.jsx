@@ -53,30 +53,7 @@ color="#0aad0a"
     ) : (
       <>
     <div className="container ">
-      <div className="mt-4">
-        <div className="container">
-          {/* row */}
-          <div className="row ">
-            {/* col */}
-            <div className="col-12">
-              {/* breadcrumb */}
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb mb-0">
-                  <li className="breadcrumb-item">
-                    <Link to="#!">Home</Link>
-                  </li>
-                  <li className="breadcrumb-item">
-                    <Link to="#!">Shop</Link>
-                  </li>
-                  <li className="breadcrumb-item active" aria-current="page">
-                    Snacks &amp; Munchies
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div className="row">
         {/* Vertical Dropdowns Column */}

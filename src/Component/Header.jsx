@@ -124,7 +124,7 @@ const Header = () => {
                 placeholder="Type to search..."
               />
             </div>
-            <div className="col-4 col-sm-4 col-lg-3 py-2">
+            <div className="col-4 col-sm-4 col-lg-3 py-2 d-flex" style={{justifyContent:'center'}}>
               {/* Button trigger modal */}
               {/* <button
             type="button"
