@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { MagnifyingGlass } from "react-loader-spinner";
 
 const MyAcconutSetting = () => {
+  // loading
+  const [loaderStatus, setLoaderStatus] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaderStatus(false);
+    }, 1500);
+  }, []);
+
   return (
     <div>
       <>
@@ -63,20 +72,14 @@ const MyAcconutSetting = () => {
                       </li>
                       {/* nav item */}
                       <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          to="/MyAcconutPaymentMethod"
-                        >
+                        <Link className="nav-link" to="/MyAcconutPaymentMethod">
                           <i className="fas fa-credit-card me-2" />
                           Payment Method
                         </Link>
                       </li>
                       {/* nav item */}
                       <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          to="/MyAcconutNotification"
-                        >
+                        <Link className="nav-link" to="/MyAcconutNotification">
                           <i className="fas fa-bell me-2" />
                           Notification
                         </Link>
@@ -96,106 +99,131 @@ const MyAcconutSetting = () => {
                   </div>
                 </div>
                 <div className="col-lg-9 col-md-8 col-12">
-                  <div className="p-6 p-lg-10">
-                    <div className="mb-6">
-                      {/* heading */}
-                      <h2 className="mb-0">Account Setting</h2>
-                    </div>
-                    <div>
-                      {/* heading */}
-                      <h5 className="mb-4">Account details</h5>
-                      <div className="row">
-                        <div className="col-lg-5">
-                          {/* form */}
-                          <form>
-                            {/* input */}
-                            <div className="mb-3">
-                              <label className="form-label">Name</label>
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Nigam Mishra"
-                              />
-                            </div>
-                            {/* input */}
-                            <div className="mb-3">
-                              <label className="form-label">Email</label>
-                              <input
-                                type="email"
-                                className="form-control"
-                                placeholder="example@gmail.com"
-                              />
-                            </div>
-                            {/* input */}
-                            <div className="mb-5">
-                              <label className="form-label">Phone</label>
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Phone number"
-                              />
-                            </div>
-                            {/* button */}
-                            <div className="mb-3">
-                              <button className="btn btn-primary">
-                                Save Details
-                              </button>
-                            </div>
-                          </form>
-                        </div>
+                  <div>
+                    {loaderStatus ? (
+                      <div className="loader-container">
+                        {/* <PulseLoader loading={loaderStatus} size={50} color="#0aad0a" /> */}
+                        <MagnifyingGlass
+                          visible={true}
+                          height="100"
+                          width="100"
+                          ariaLabel="magnifying-glass-loading"
+                          wrapperStyle={{}}
+                          wrapperclassName="magnifying-glass-wrapper"
+                          glassColor="#c0efff"
+                          color="#0aad0a"
+                        />
                       </div>
-                    </div>
-                    <hr className="my-10" />
-                    <div className="pe-lg-14">
-                      {/* heading */}
-                      <h5 className="mb-4">Password</h5>
-                      <form className=" row row-cols-1 row-cols-lg-2">
-                        {/* input */}
-                        <div className="mb-3 col">
-                          <label className="form-label">New Password</label>
-                          <input
-                            type="password"
-                            className="form-control"
-                            placeholder="**********"
-                          />
+                    ) : (
+                      <>
+                        <div className="p-6 p-lg-10">
+                          <div className="mb-6">
+                            {/* heading */}
+                            <h2 className="mb-0">Account Setting</h2>
+                          </div>
+                          <div>
+                            {/* heading */}
+                            <h5 className="mb-4">Account details</h5>
+                            <div className="row">
+                              <div className="col-lg-5">
+                                {/* form */}
+                                <form>
+                                  {/* input */}
+                                  <div className="mb-3">
+                                    <label className="form-label">Name</label>
+                                    <input
+                                      type="text"
+                                      className="form-control"
+                                      placeholder="Nigam Mishra"
+                                    />
+                                  </div>
+                                  {/* input */}
+                                  <div className="mb-3">
+                                    <label className="form-label">Email</label>
+                                    <input
+                                      type="email"
+                                      className="form-control"
+                                      placeholder="example@gmail.com"
+                                    />
+                                  </div>
+                                  {/* input */}
+                                  <div className="mb-5">
+                                    <label className="form-label">Phone</label>
+                                    <input
+                                      type="text"
+                                      className="form-control"
+                                      placeholder="Phone number"
+                                    />
+                                  </div>
+                                  {/* button */}
+                                  <div className="mb-3">
+                                    <button className="btn btn-primary">
+                                      Save Details
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                          <hr className="my-10" />
+                          <div className="pe-lg-14">
+                            {/* heading */}
+                            <h5 className="mb-4">Password</h5>
+                            <form className=" row row-cols-1 row-cols-lg-2">
+                              {/* input */}
+                              <div className="mb-3 col">
+                                <label className="form-label">
+                                  New Password
+                                </label>
+                                <input
+                                  type="password"
+                                  className="form-control"
+                                  placeholder="**********"
+                                />
+                              </div>
+                              {/* input */}
+                              <div className="mb-3 col">
+                                <label className="form-label">
+                                  Current Password
+                                </label>
+                                <input
+                                  type="password"
+                                  className="form-control"
+                                  placeholder="**********"
+                                />
+                              </div>
+                              {/* input */}
+                              <div className="col-12">
+                                <p className="mb-4">
+                                  Can’t remember your current password?
+                                  <Link to="#"> Reset your password.</Link>
+                                </p>
+                                <Link to="#" className="btn btn-primary">
+                                  Save Password
+                                </Link>
+                              </div>
+                            </form>
+                          </div>
+                          <hr className="my-10" />
+                          <div>
+                            {/* heading */}
+                            <h5 className="mb-4">Delete Account</h5>
+                            <p className="mb-2">
+                              Would you like to delete your account?
+                            </p>
+                            <p className="mb-5">
+                              This account contain 12 orders, Deleting your
+                              account will remove all the order details
+                              associated with it.
+                            </p>
+                            {/* btn */}
+                            <Link to="#" className="btn btn-outline-danger">
+                              I want to delete my account
+                            </Link>
+                          </div>
                         </div>
-                        {/* input */}
-                        <div className="mb-3 col">
-                          <label className="form-label">Current Password</label>
-                          <input
-                            type="password"
-                            className="form-control"
-                            placeholder="**********"
-                          />
-                        </div>
-                        {/* input */}
-                        <div className="col-12">
-                          <p className="mb-4">
-                            Can’t remember your current password?
-                            <Link to="#"> Reset your password.</Link>
-                          </p>
-                          <Link to="#" className="btn btn-primary">
-                            Save Password
-                          </Link>
-                        </div>
-                      </form>
-                    </div>
-                    <hr className="my-10" />
-                    <div>
-                      {/* heading */}
-                      <h5 className="mb-4">Delete Account</h5>
-                      <p className="mb-2">
-                        Would you like to delete your account?
-                      </p>
-                      <p className="mb-5">
-                        This account contain 12 orders, Deleting your account
-                        will remove all the order details associated with it.
-                      </p>
-                      {/* btn */}
-                      <Link to="#" className="btn btn-outline-danger">
-                        I want to delete my account
-                      </Link>
-                    </div>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -211,7 +239,7 @@ const MyAcconutSetting = () => {
             {/* offcanvas header */}
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasAccountLabel">
-                Offcanvas
+                My Account
               </h5>
               <button
                 type="button"
@@ -225,54 +253,54 @@ const MyAcconutSetting = () => {
               <ul className="nav flex-column nav-pills nav-pills-dark">
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link
-                    className="nav-link "
+                  <a
+                    className="nav-link active"
                     aria-current="page"
-                    to="/MyAccountOrder"
+                    href="/MyAccountOrder"
                   >
                     <i className="fas fa-shopping-bag me-2" />
                     Your Orders
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/MyAccountSetting">
+                  <a className="nav-link " href="/MyAccountSetting">
                     <i className="fas fa-cog me-2" />
                     Settings
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link" to="/MyAccountAddress">
+                  <a className="nav-link" href="/MyAccountAddress">
                     <i className="fas fa-map-marker-alt me-2" />
                     Address
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link" to="/MyAcconutPaymentMethod">
+                  <a className="nav-link" href="/MyAcconutPaymentMethod">
                     <i className="fas fa-credit-card me-2" />
                     Payment Method
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link" to="/MyAcconutNotification">
+                  <a className="nav-link" href="/MyAcconutNotification">
                     <i className="fas fa-bell me-2" />
                     Notification
-                  </Link>
+                  </a>
                 </li>
               </ul>
               <hr className="my-6" />
               <div>
-                {/* navs */}
+                {/* nav  */}
                 <ul className="nav flex-column nav-pills nav-pills-dark">
                   {/* nav item */}
                   <li className="nav-item">
-                    <Link className="nav-link " to="/Grocery-react/">
+                    <a className="nav-link " href="/Grocery-react/">
                       <i className="fas fa-sign-out-alt me-2" />
                       Log out
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>

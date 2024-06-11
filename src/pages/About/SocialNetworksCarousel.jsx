@@ -1,4 +1,5 @@
 import React from 'react';
+import { Zoom } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { Pagination } from 'swiper/core';
@@ -25,7 +26,9 @@ const SocialNetworksCarousel = () => {
         <SwiperSlide>
           <div className="position-relative text-center border-end mx-n1">
             <Link to="#" className="btn btn-icon btn-secondary btn-facebook btn-lg stretched-link">
+            <Zoom>
               <i className="bx bxl-facebook"></i>
+              </Zoom>
             </Link>
             <div className="pt-4">
               <h6 className="mb-1">Facebook</h6>
@@ -37,7 +40,9 @@ const SocialNetworksCarousel = () => {
         <SwiperSlide>
           <div className="position-relative text-center border-end mx-n1">
             <Link to="#" className="btn btn-icon btn-secondary btn-instagram btn-lg stretched-link">
+            <Zoom>
               <i className="bx bxl-instagram"></i>
+              </Zoom>
             </Link>
             <div className="pt-4">
               <h6 className="mb-1">Instagram</h6>
@@ -49,7 +54,9 @@ const SocialNetworksCarousel = () => {
         <SwiperSlide>
           <div className="position-relative text-center border-end mx-n1">
             <Link to="#" className="btn btn-icon btn-secondary btn-twitter btn-lg stretched-link">
+            <Zoom>
               <i className="bx bxl-twitter"></i>
+              </Zoom>
             </Link>
             <div className="pt-4">
               <h6 className="mb-1">Twitter</h6>
@@ -61,7 +68,9 @@ const SocialNetworksCarousel = () => {
         <SwiperSlide>
           <div className="position-relative text-center border-end mx-n1">
             <Link to="#" className="btn btn-icon btn-secondary btn-linkedin btn-lg stretched-link">
+            <Zoom>
               <i className="bx bxl-linkedin"></i>
+              </Zoom>
             </Link>
             <div className="pt-4">
               <h6 className="mb-1">LinkedIn</h6>
@@ -73,7 +82,9 @@ const SocialNetworksCarousel = () => {
         <SwiperSlide>
           <div className="position-relative text-center border-end mx-n1">
             <Link to="#" className="btn btn-icon btn-secondary btn-youtube btn-lg stretched-link">
+            <Zoom>
               <i className="bx bxl-youtube"></i>
+              </Zoom>
             </Link>
             <div className="pt-4">
               <h6 className="mb-1">YouTube</h6>
@@ -85,7 +96,9 @@ const SocialNetworksCarousel = () => {
         <SwiperSlide>
           <div className="position-relative text-center border-end mx-n1">
             <Link to="#" className="btn btn-icon btn-secondary btn-dribbble btn-lg stretched-link">
+            <Zoom>
               <i className="bx bxl-dribbble"></i>
+              </Zoom>
             </Link>
             <div className="pt-4">
               <h6 className="mb-1">Dribbble</h6>

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { MagnifyingGlass } from "react-loader-spinner";
 
 const MyAccountAddress = () => {
+  // loading
+  const [loaderStatus, setLoaderStatus] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaderStatus(false);
+    }, 1500);
+  }, []);
+
   return (
     <div>
       <>
@@ -41,14 +50,14 @@ const MyAccountAddress = () => {
                           aria-current="page"
                           to="/MyAccountOrder"
                         >
-                         <i className="fas fa-shopping-bag me-2" />
+                          <i className="fas fa-shopping-bag me-2" />
                           Your Orders
                         </Link>
                       </li>
                       {/* nav item */}
                       <li className="nav-item">
                         <Link className="nav-link " to="/MyAccountSetting">
-                        <i className="fas fa-cog me-2" />
+                          <i className="fas fa-cog me-2" />
                           Settings
                         </Link>
                       </li>
@@ -64,20 +73,14 @@ const MyAccountAddress = () => {
                       </li>
                       {/* nav item */}
                       <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          to="/MyAcconutPaymentMethod"
-                        >
+                        <Link className="nav-link" to="/MyAcconutPaymentMethod">
                           <i className="fas fa-credit-card me-2" />
                           Payment Method
                         </Link>
                       </li>
                       {/* nav item */}
                       <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          to="/MyAcconutNotification"
-                        >
+                        <Link className="nav-link" to="/MyAcconutNotification">
                           <i className="fas fa-bell me-2" />
                           Notification
                         </Link>
@@ -89,7 +92,7 @@ const MyAccountAddress = () => {
                       {/* nav item */}
                       <li className="nav-item">
                         <Link className="nav-link " to="/Grocery-react/">
-                        <i className="fas fa-sign-out-alt me-2" />
+                          <i className="fas fa-sign-out-alt me-2" />
                           Log out
                         </Link>
                       </li>
@@ -97,115 +100,135 @@ const MyAccountAddress = () => {
                   </div>
                 </div>
                 <div className="col-lg-9 col-md-8 col-12">
-                  <div className="p-6 p-lg-10">
-                    <div className="d-flex justify-content-between mb-6">
-                      {/* heading */}
-                      <h2 className="mb-0">Address</h2>
-                      {/* button */}
-                      <Link
-                        to="#"
-                        className="btn btn-outline-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#addAddressModal"
-                      >
-                        Add a new address{" "}
-                      </Link>
-                    </div>
-                    <div className="row">
-                      {/* col */}
-                      <div className="col-lg-5 col-xxl-4 col-12 mb-4">
-                        {/* form */}
-                        <div className="border p-6 rounded-3">
-                          <div className="form-check mb-4">
-                            <input
-                              className="form-check-input"
-                              type="radio"
-                              name="flexRadioDefault"
-                              id="homeRadio"
-                              defaultChecked
-                            />
-                            <label
-                              className="form-check-label text-dark fw-semi-bold"
-                              htmlFor="homeRadio"
-                            >
-                              Home
-                            </label>
-                          </div>
-                          {/* address */}
-                          <p className="mb-6">
-                            Jitu Chauhan
-                            <br />
-                            4450 North Avenue Oakland, <br />
-                            Nebraska, United States,
-                            <br />
-                            402-776-1106
-                          </p>
-                          {/* btn */}
-                          <Link to="#" className="btn btn-info btn-sm">
-                            Default address
-                          </Link>
-                          <div className="mt-4">
-                            <Link to="#" className="text-inherit">
-                              Edit{" "}
-                            </Link>
+                  <div>
+                    {loaderStatus ? (
+                      <div className="loader-container">
+                        {/* <PulseLoader loading={loaderStatus} size={50} color="#0aad0a" /> */}
+                        <MagnifyingGlass
+                          visible={true}
+                          height="100"
+                          width="100"
+                          ariaLabel="magnifying-glass-loading"
+                          wrapperStyle={{}}
+                          wrapperclassName="magnifying-glass-wrapper"
+                          glassColor="#c0efff"
+                          color="#0aad0a"
+                        />
+                      </div>
+                    ) : (
+                      <>
+                        <div className="p-6 p-lg-10">
+                          <div className="d-flex justify-content-between mb-6">
+                            {/* heading */}
+                            <h2 className="mb-0">Address</h2>
+                            {/* button */}
                             <Link
                               to="#"
-                              className="text-danger ms-3"
+                              className="btn btn-outline-primary"
                               data-bs-toggle="modal"
-                              data-bs-target="#deleteModal"
+                              data-bs-target="#addAddressModal"
                             >
-                              Delete
+                              Add a new address{" "}
                             </Link>
+                          </div>
+                          <div className="row">
+                            {/* col */}
+                            <div className="col-lg-5 col-xxl-4 col-12 mb-4">
+                              {/* form */}
+                              <div className="border p-6 rounded-3">
+                                <div className="form-check mb-4">
+                                  <input
+                                    className="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="homeRadio"
+                                    defaultChecked
+                                  />
+                                  <label
+                                    className="form-check-label text-dark fw-semi-bold"
+                                    htmlFor="homeRadio"
+                                  >
+                                    Home
+                                  </label>
+                                </div>
+                                {/* address */}
+                                <p className="mb-6">
+                                  Jitu Chauhan
+                                  <br />
+                                  4450 North Avenue Oakland, <br />
+                                  Nebraska, United States,
+                                  <br />
+                                  402-776-1106
+                                </p>
+                                {/* btn */}
+                                <Link to="#" className="btn btn-info btn-sm">
+                                  Default address
+                                </Link>
+                                <div className="mt-4">
+                                  <Link to="#" className="text-inherit">
+                                    Edit{" "}
+                                  </Link>
+                                  <Link
+                                    to="#"
+                                    className="text-danger ms-3"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                  >
+                                    Delete
+                                  </Link>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-lg-5 col-xxl-4 col-12 mb-4">
+                              {/* input */}
+                              <div className="border p-6 rounded-3">
+                                <div className="form-check mb-4">
+                                  <input
+                                    className="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="officeRadio"
+                                  />
+                                  <label
+                                    className="form-check-label text-dark fw-semi-bold"
+                                    htmlFor="officeRadio"
+                                  >
+                                    Office
+                                  </label>
+                                </div>
+                                {/* nav item */}
+                                <p className="mb-6">
+                                  Nitu Chauhan
+                                  <br />
+                                  3853 Coal Road <br />
+                                  Tannersville, Pennsylvania, 18372, United
+                                  States <br />
+                                  402-776-1106
+                                </p>
+                                {/* link */}
+                                <Link to="#" className="link-primary">
+                                  Set as Default
+                                </Link>
+                                <div className="mt-4">
+                                  <Link to="#" className="text-inherit">
+                                    Edit{" "}
+                                  </Link>
+                                  {/* btn */}
+                                  <Link
+                                    to="#"
+                                    className="text-danger ms-3"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                  >
+                                    Delete
+                                  </Link>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-lg-5 col-xxl-4 col-12 mb-4">
-                        {/* input */}
-                        <div className="border p-6 rounded-3">
-                          <div className="form-check mb-4">
-                            <input
-                              className="form-check-input"
-                              type="radio"
-                              name="flexRadioDefault"
-                              id="officeRadio"
-                            />
-                            <label
-                              className="form-check-label text-dark fw-semi-bold"
-                              htmlFor="officeRadio"
-                            >
-                              Office
-                            </label>
-                          </div>
-                          {/* nav item */}
-                          <p className="mb-6">
-                            Nitu Chauhan
-                            <br />
-                            3853 Coal Road <br />
-                            Tannersville, Pennsylvania, 18372, United States{" "}
-                            <br />
-                            402-776-1106
-                          </p>
-                          {/* link */}
-                          <Link to="#" className="link-primary">
-                            Set as Default
-                          </Link>
-                          <div className="mt-4">
-                            <Link to="#" className="text-inherit">
-                              Edit{" "}
-                            </Link>
-                            {/* btn */}
-                            <Link
-                              to="#"
-                              className="text-danger ms-3"
-                              data-bs-toggle="modal"
-                              data-bs-target="#deleteModal"
-                            >
-                              Delete
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -431,10 +454,10 @@ const MyAccountAddress = () => {
             id="offcanvasAccount"
             aria-labelledby="offcanvasAccountLabel"
           >
-            {/* offcanvac header */}
+            {/* offcanvas header */}
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasAccountLabel">
-                Offcanvas
+                My Account
               </h5>
               <button
                 type="button"
@@ -443,60 +466,59 @@ const MyAccountAddress = () => {
                 aria-label="Close"
               />
             </div>
-            {/* offcanvac body */}
+            {/* offcanvas body */}
             <div className="offcanvas-body">
-              {/* nav */}
               <ul className="nav flex-column nav-pills nav-pills-dark">
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link
-                    className="nav-link "
+                  <a
+                    className="nav-link active"
                     aria-current="page"
-                    to="/MyAccountOrder"
+                    href="/MyAccountOrder"
                   >
                     <i className="fas fa-shopping-bag me-2" />
                     Your Orders
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link " to="/MyAccountSetting">
-                     <i className="fas fa-cog me-2" />
+                  <a className="nav-link " href="/MyAccountSetting">
+                    <i className="fas fa-cog me-2" />
                     Settings
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/MyAccountAddress">
+                  <a className="nav-link" href="/MyAccountAddress">
                     <i className="fas fa-map-marker-alt me-2" />
                     Address
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link" to="/MyAcconutPaymentMethod">
+                  <a className="nav-link" href="/MyAcconutPaymentMethod">
                     <i className="fas fa-credit-card me-2" />
                     Payment Method
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link" to="/MyAcconutNotification">
+                  <a className="nav-link" href="/MyAcconutNotification">
                     <i className="fas fa-bell me-2" />
                     Notification
-                  </Link>
+                  </a>
                 </li>
               </ul>
               <hr className="my-6" />
               <div>
-                {/* nav */}
+                {/* nav  */}
                 <ul className="nav flex-column nav-pills nav-pills-dark">
                   {/* nav item */}
                   <li className="nav-item">
-                    <Link className="nav-link " to="/Grocery-react/">
+                    <a className="nav-link " href="/Grocery-react/">
                       <i className="fas fa-sign-out-alt me-2" />
                       Log out
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>

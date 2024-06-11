@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import groceryshop from "../images/Grocerylogo.png";
 import amazonpay from "../images/amazonpay.svg";
 import american from "../images/american-express.svg";
@@ -38,27 +39,27 @@ const Footer = () => {
                     <h4>Payment Partners</h4>
                     <ul className="list-inline d-flex mb-0">
                       <li className="list-inline-item">
-                        <Link href="#!">
+                        <Link to="#!">
                           <img src={amazonpay} alt="footerfreshcart" />
                         </Link>
                       </li>
                       <li className="list-inline-item">
-                        <Link href="#!">
+                        <Link to="#!">
                           <img src={american} alt="footerfreshcart" />
                         </Link>
                       </li>
                       <li className="list-inline-item">
-                        <Link href="#!">
+                        <Link to="#!">
                           <img src={mastercard} alt="footerfreshcart" />
                         </Link>
                       </li>
                       <li className="list-inline-item">
-                        <Link href="#!">
+                        <Link to="#!">
                           <img src={paypal} alt="footerfreshcart" />
                         </Link>
                       </li>
                       <li className="list-inline-item">
-                        <Link href="#!">
+                        <Link to="#!">
                           <img src={visa} alt="footerfreshcart" />
                         </Link>
                       </li>
@@ -74,7 +75,7 @@ const Footer = () => {
                     <div className="col">
                       <ul className="footer-link mb-0">
                         <li>
-                          <Link href="#">
+                          <Link to="#">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -82,7 +83,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
+                          <Link to="#">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -90,7 +91,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
+                          <Link to="#">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -98,7 +99,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
+                          <Link to="#">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -106,7 +107,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href=" ">
+                          <Link to=" ">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -114,7 +115,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href=" ">
+                          <Link to=" ">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -122,7 +123,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href=" ">
+                          <Link to=" ">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -130,17 +131,17 @@ const Footer = () => {
                           </Link>
                         </li>
                         {/* <li>
-                              <Link href=" ">
+                              <Link to=" ">
                                   <span><i className="fa fa-angle-right"></i></span> Privacy Policy
                               </Link>
                           </li>
                           <li>
-                              <Link href="">
+                              <Link to="">
                                   <span><i className="fa fa-angle-right"></i></span> Faqs
                               </Link>
                           </li>
                           <li>
-                              <Link href="">
+                              <Link to="">
                                   <span><i className="fa fa-angle-right"></i></span> Career
                               </Link>
                           </li> */}
@@ -157,7 +158,7 @@ const Footer = () => {
                     <div className="col">
                       <ul className="footer-link mb-0">
                         <li>
-                          <Link href=" ">
+                          <Link to=" ">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -165,7 +166,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href=" ">
+                          <Link to="/ShopCart">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -173,7 +174,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href=" ">
+                          <Link to="/MyAccountOrder">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>
@@ -181,7 +182,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href=" ">
+                          <Link to="/MyAccountOrder">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -189,7 +190,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
+                          <Link to="/MyAcconutPaymentMethod">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -197,7 +198,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
+                          <Link to="/Contact">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -217,7 +218,7 @@ const Footer = () => {
                     <div className="col">
                       <ul className="footer-link mb-0">
                         <li>
-                          <Link href=" ">
+                          <Link to="/AboutUs">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -225,7 +226,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href=" ">
+                          <Link to="/AboutUs">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -233,7 +234,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href=" ">
+                          <Link to="/Blog">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -241,7 +242,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href>
+                          <Link to="/Contact">
                             <span>
                               <i className="fa fa-angle-right" />{" "}
                             </span>{" "}
@@ -249,7 +250,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href="#">
+                          <Link to="/Blog">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -262,7 +263,13 @@ const Footer = () => {
                 </div>
                 <div className="footer-widget mt-8">
                   <div className="newsletter-item">
-                    <input type="email" name="email" placeholder="Your Email" />
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Your Email"
+                      className="form-control form-control-lg"
+                      required
+                    />
                     <button type="submit">
                       <i className="fa fa-paper-plane" />
                     </button>
@@ -272,23 +279,23 @@ const Footer = () => {
                     style={{ display: "flex", gap: 10 }}
                   >
                     <li>
-                      <Link href="#" className="facebook fade-zoom">
-                        <i className="fa fa-facebook-f" />
+                      <Link to="#" className="facebook ">
+                        <i className="bx bxl-facebook"></i>
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="twitter fade-zoom">
-                        <i className="fa fa-twitter" />
+                      <Link to="#" className="twitter">
+                        <i className="bx bxl-twitter"></i>
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="instagram fade-zoom">
-                        <i className="fa fa-instagram" />
+                      <Link to="#" className="instagram ">
+                        <i className="bx bxl-instagram"></i>
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="dribbble fade-zoom">
-                        <i className="fa fa-linkedin" />
+                      <Link to="#" className="linkedin">
+                        <i className="bx bxl-linkedin"></i>
                       </Link>
                     </li>
                   </ul>

@@ -12248,7 +12248,7 @@ fieldset:disabled .btn {
   text-decoration: none;
 }
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+  /* box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width); */
   outline: 0;
   text-decoration: none;
 }
@@ -28503,7 +28503,7 @@ li {
 }
 
 .newsletter-item button {
-  height: 50px;
+  height: 44px;
   box-shadow: none;
   position: absolute;
   cursor: pointer;
@@ -28515,7 +28515,7 @@ li {
   background: #000000;
   display: inline-block;
   top: 0;
-  line-height: 50px;
+  /* line-height: 50px; */
   border: 1px solid #000000;
 }
 
@@ -29719,7 +29719,7 @@ background-color: #f3f6ff;
 
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
+  width: 33px;
   height: 4px;
   background-color: #333;
   margin: 6px 0;
@@ -29735,7 +29735,7 @@ background-color: #f3f6ff;
 }
 
 .change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+  transform: translate(0, -9px) rotate(45deg);
 }
 .containerr {
   display: inline-block;

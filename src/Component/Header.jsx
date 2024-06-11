@@ -27,7 +27,7 @@ const Header = () => {
                 <div className="col-md-10 col-12 d-flex " style={{ alignItems: 'center' }}>
                   <span> Super Value Deals - Save more with coupons</span>
                 </div>
-                <div className="col-md-2 col-xxl-1 text-end d-none d-lg-block" style={{ marginLeft: '100px' }}>
+                <div className="col-md-2 col-xxl-1 text-end d-none d-lg-block" style={{ marginLeft: '20px' }}>
                   <div className="list-inline">
                     <div className="list-inline-item">
                       <Link

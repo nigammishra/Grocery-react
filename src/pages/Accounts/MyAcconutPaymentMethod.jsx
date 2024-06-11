@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { MagnifyingGlass } from "react-loader-spinner";
+import amazonpay from "../../images/amazonpay.svg";
+import american from "../../images/american-express.svg";
+import mastercard from "../../images/mastercard.svg";
+import paypal from "../../images/paypal.svg";
+import visa from "../../images/visa.svg";
+import discover from "../../images/discover.svg";
 
 const MyAcconutPaymentMethod = () => {
+  // loading
+  const [loaderStatus, setLoaderStatus] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaderStatus(false);
+    }, 1500);
+  }, []);
+
   return (
     <div>
       <>
@@ -69,10 +84,7 @@ const MyAcconutPaymentMethod = () => {
                       </li>
                       {/* nav item */}
                       <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          to="/MyAcconutNotification"
-                        >
+                        <Link className="nav-link" to="/MyAcconutNotification">
                           <i className="fas fa-bell me-2" />
                           Notification
                         </Link>
@@ -92,168 +104,193 @@ const MyAcconutPaymentMethod = () => {
                   </div>
                 </div>
                 <div className="col-lg-9 col-md-8 col-12">
-                  <div className="p-6 p-lg-10">
-                    {/* heading */}
-                    <div className="d-flex justify-content-between mb-6 align-items-center">
-                      <h2 className="mb-0">Payment Methods</h2>
-                      <Link
-                        to="#"
-                        className="btn btn-outline-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#paymentModal"
-                      >
-                        Add Payment{" "}
-                      </Link>
-                    </div>
-                    <ul className="list-group list-group-flush">
-                      {/* List group item */}
-                      <li className="list-group-item py-5 px-0">
-                        <div className="d-flex justify-content-between">
-                          <div className="d-flex">
-                            {/* img */}
-                            <img
-                              src="../assets/images/svg-graphics/visa.svg"
-                              alt="payment"
-                            />
-                            {/* text */}
-                            <div className="ms-4">
-                              <h5 className="mb-0 h6 h6">**** 1234</h5>
-                              <p className="mb-0 small">Expires in 10/2023</p>
-                            </div>
-                          </div>
-                          <div>
-                            {/* button */}
+                  <div>
+                    {loaderStatus ? (
+                      <div className="loader-container">
+                        {/* <PulseLoader loading={loaderStatus} size={50} color="#0aad0a" /> */}
+                        <MagnifyingGlass
+                          visible={true}
+                          height="100"
+                          width="100"
+                          ariaLabel="magnifying-glass-loading"
+                          wrapperStyle={{}}
+                          wrapperclassName="magnifying-glass-wrapper"
+                          glassColor="#c0efff"
+                          color="#0aad0a"
+                        />
+                      </div>
+                    ) : (
+                      <>
+                        <div className="p-6 p-lg-10">
+                          {/* heading */}
+                          <div className="d-flex justify-content-between mb-6 align-items-center">
+                            <h2 className="mb-0">Payment Methods</h2>
                             <Link
                               to="#"
-                              className="btn btn-outline-gray-400 disabled btn-sm"
+                              className="btn btn-outline-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#paymentModal"
                             >
-                              Remove
+                              Add Payment{" "}
                             </Link>
                           </div>
+                          <ul className="list-group list-group-flush">
+                            {/* List group item */}
+                            <li className="list-group-item py-5 px-0">
+                              <div className="d-flex justify-content-between">
+                                <div className="d-flex">
+                                  {/* img */}
+                                  <img src={visa} alt="payment" />
+                                  {/* text */}
+                                  <div className="ms-4">
+                                    <h5 className="mb-0 h6 h6">**** 1234</h5>
+                                    <p className="mb-0 small">
+                                      Expires in 10/2023
+                                    </p>
+                                  </div>
+                                </div>
+                                <div>
+                                  {/* button */}
+                                  <Link
+                                    to="#"
+                                    className="btn btn-outline-gray-400 disabled btn-sm"
+                                  >
+                                    Remove
+                                  </Link>
+                                </div>
+                              </div>
+                            </li>
+                            {/* List group item */}
+                            <li className="list-group-item px-0 py-5">
+                              <div className="d-flex justify-content-between">
+                                <div className="d-flex">
+                                  {/* img */}
+                                  <img
+                                    src={mastercard}
+                                    alt="payment"
+                                    className="me-3"
+                                  />
+                                  <div>
+                                    <h5 className="mb-0 h6">
+                                      Mastercard ending in 1234
+                                    </h5>
+                                    <p className="mb-0 small">
+                                      Expires in 03/2026
+                                    </p>
+                                  </div>
+                                </div>
+                                <div>
+                                  {/* button*/}
+                                  <Link
+                                    to="#"
+                                    className="btn btn-outline-gray-400 text-muted btn-sm"
+                                  >
+                                    Remove
+                                  </Link>
+                                </div>
+                              </div>
+                            </li>
+                            {/* List group item */}
+                            <li className="list-group-item px-0 py-5">
+                              <div className="d-flex justify-content-between">
+                                <div className="d-flex">
+                                  {/* img */}
+                                  <img
+                                    src={discover}
+                                    alt="payment"
+                                    className="me-3"
+                                  />
+                                  <div>
+                                    {/* text */}
+                                    <h5 className="mb-0 h6">
+                                      Discover ending in 1234
+                                    </h5>
+                                    <p className="mb-0 small">
+                                      Expires in 07/2020{" "}
+                                      <span className="badge bg-warning text-dark">
+                                        {" "}
+                                        This card is expired.
+                                      </span>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div>
+                                  {/* btn */}
+                                  <Link
+                                    to="#"
+                                    className="btn btn-outline-gray-400 text-muted btn-sm"
+                                  >
+                                    Remove
+                                  </Link>
+                                </div>
+                              </div>
+                            </li>
+                            {/* List group item */}
+                            <li className="list-group-item px-0 py-5">
+                              <div className="d-flex justify-content-between">
+                                <div className="d-flex">
+                                  {/* img */}
+                                  <img
+                                    src={amazonpay}
+                                    alt="payment"
+                                    className="me-3"
+                                  />
+                                  {/* text */}
+                                  <div>
+                                    <h5 className="mb-0 h6">
+                                      American Express ending in 1234
+                                    </h5>
+                                    <p className="mb-0 small">
+                                      Expires in 12/2021
+                                    </p>
+                                  </div>
+                                </div>
+                                <div>
+                                  {/* btn */}
+                                  <Link
+                                    to="#"
+                                    className="btn btn-outline-gray-400 text-muted btn-sm"
+                                  >
+                                    Remove
+                                  </Link>
+                                </div>
+                              </div>
+                            </li>
+                            {/* List group item */}
+                            <li className="list-group-item px-0 py-5 border-bottom">
+                              <div className="d-flex justify-content-between">
+                                <div className="d-flex">
+                                  {/* img */}
+                                  <img
+                                    src={paypal}
+                                    alt="payment"
+                                    className="me-3"
+                                  />
+                                  <div>
+                                    {/* text */}
+                                    <h5 className="mb-0 h6">
+                                      Paypal Express ending in 1234
+                                    </h5>
+                                    <p className="mb-0 small">
+                                      Expires in 10/2021
+                                    </p>
+                                  </div>
+                                </div>
+                                <div>
+                                  {/* btn */}
+                                  <Link
+                                    to="#"
+                                    className="btn btn-outline-gray-400 text-muted btn-sm"
+                                  >
+                                    Remove
+                                  </Link>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
-                      </li>
-                      {/* List group item */}
-                      <li className="list-group-item px-0 py-5">
-                        <div className="d-flex justify-content-between">
-                          <div className="d-flex">
-                            {/* img */}
-                            <img
-                              src="../assets/images/svg-graphics/mastercard.svg"
-                              alt="payment"
-                              className="me-3"
-                            />
-                            <div>
-                              <h5 className="mb-0 h6">
-                                Mastercard ending in 1234
-                              </h5>
-                              <p className="mb-0 small">Expires in 03/2026</p>
-                            </div>
-                          </div>
-                          <div>
-                            {/* button*/}
-                            <Link
-                              to="#"
-                              className="btn btn-outline-gray-400 text-muted btn-sm"
-                            >
-                              Remove
-                            </Link>
-                          </div>
-                        </div>
-                      </li>
-                      {/* List group item */}
-                      <li className="list-group-item px-0 py-5">
-                        <div className="d-flex justify-content-between">
-                          <div className="d-flex">
-                            {/* img */}
-                            <img
-                              src="../assets/images/svg-graphics/discover.svg"
-                              alt="payment"
-                              className="me-3"
-                            />
-                            <div>
-                              {/* text */}
-                              <h5 className="mb-0 h6">
-                                Discover ending in 1234
-                              </h5>
-                              <p className="mb-0 small">
-                                Expires in 07/2020{" "}
-                                <span className="badge bg-warning text-dark">
-                                  {" "}
-                                  This card is expired.
-                                </span>
-                              </p>
-                            </div>
-                          </div>
-                          <div>
-                            {/* btn */}
-                            <Link
-                              to="#"
-                              className="btn btn-outline-gray-400 text-muted btn-sm"
-                            >
-                              Remove
-                            </Link>
-                          </div>
-                        </div>
-                      </li>
-                      {/* List group item */}
-                      <li className="list-group-item px-0 py-5">
-                        <div className="d-flex justify-content-between">
-                          <div className="d-flex">
-                            {/* img */}
-                            <img
-                              src="../assets/images/svg-graphics/americanexpress.svg"
-                              alt="payment"
-                              className="me-3"
-                            />
-                            {/* text */}
-                            <div>
-                              <h5 className="mb-0 h6">
-                                American Express ending in 1234
-                              </h5>
-                              <p className="mb-0 small">Expires in 12/2021</p>
-                            </div>
-                          </div>
-                          <div>
-                            {/* btn */}
-                            <Link
-                              to="#"
-                              className="btn btn-outline-gray-400 text-muted btn-sm"
-                            >
-                              Remove
-                            </Link>
-                          </div>
-                        </div>
-                      </li>
-                      {/* List group item */}
-                      <li className="list-group-item px-0 py-5 border-bottom">
-                        <div className="d-flex justify-content-between">
-                          <div className="d-flex">
-                            {/* img */}
-                            <img
-                              src="../assets/images/svg-graphics/paypal.svg"
-                              alt="payment"
-                              className="me-3"
-                            />
-                            <div>
-                              {/* text */}
-                              <h5 className="mb-0 h6">
-                                Paypal Express ending in 1234
-                              </h5>
-                              <p className="mb-0 small">Expires in 10/2021</p>
-                            </div>
-                          </div>
-                          <div>
-                            {/* btn */}
-                            <Link
-                              to="#"
-                              className="btn btn-outline-gray-400 text-muted btn-sm"
-                            >
-                              Remove
-                            </Link>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -269,7 +306,7 @@ const MyAcconutPaymentMethod = () => {
             {/* offcanvas header */}
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasAccountLabel">
-                Offcanvas
+                My Account
               </h5>
               <button
                 type="button"
@@ -283,57 +320,54 @@ const MyAcconutPaymentMethod = () => {
               <ul className="nav flex-column nav-pills nav-pills-dark">
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link
-                    className="nav-link "
+                  <a
+                    className="nav-link active"
                     aria-current="page"
-                    to="/MyAccountOrder"
+                    href="/MyAccountOrder"
                   >
                     <i className="fas fa-shopping-bag me-2" />
                     Your Orders
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link " to="/MyAccountSetting">
+                  <a className="nav-link " href="/MyAccountSetting">
                     <i className="fas fa-cog me-2" />
                     Settings
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link" to="/MyAccountAddress">
+                  <a className="nav-link" href="/MyAccountAddress">
                     <i className="fas fa-map-marker-alt me-2" />
                     Address
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link
-                    className="nav-link active"
-                    to="/MyAcconutPaymentMethod"
-                  >
+                  <a className="nav-link" href="/MyAcconutPaymentMethod">
                     <i className="fas fa-credit-card me-2" />
                     Payment Method
-                  </Link>
+                  </a>
                 </li>
                 {/* nav item */}
                 <li className="nav-item">
-                  <Link className="nav-link" to="/MyAcconutNotification">
+                  <a className="nav-link" href="/MyAcconutNotification">
                     <i className="fas fa-bell me-2" />
                     Notification
-                  </Link>
+                  </a>
                 </li>
               </ul>
               <hr className="my-6" />
               <div>
-                {/* navs */}
+                {/* nav  */}
                 <ul className="nav flex-column nav-pills nav-pills-dark">
                   {/* nav item */}
                   <li className="nav-item">
-                    <Link className="nav-link " to="/Grocery-react/">
+                    <a className="nav-link " href="/Grocery-react/">
                       <i className="fas fa-sign-out-alt me-2" />
                       Log out
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -387,10 +421,7 @@ const MyAcconutPaymentMethod = () => {
                               className="form-check-label"
                               htmlFor="paymentRadioOne"
                             >
-                              <img
-                                src="../assets/images/payment/american-express.svg"
-                                alt="payment"
-                              />
+                              <img src={american} alt="payment" />
                             </label>
                           </div>
                           {/* Radio button */}
@@ -405,10 +436,7 @@ const MyAcconutPaymentMethod = () => {
                               className="form-check-label"
                               htmlFor="paymentRadioTwo"
                             >
-                              <img
-                                src="../assets/images/payment/mastercard.svg"
-                                alt="payment"
-                              />
+                              <img src={mastercard} alt="payment" />
                             </label>
                           </div>
                           {/* Radio button */}
@@ -423,10 +451,7 @@ const MyAcconutPaymentMethod = () => {
                               className="form-check-label"
                               htmlFor="paymentRadioFour"
                             >
-                              <img
-                                src="../assets/images/payment/visa.svg"
-                                alt="payment"
-                              />
+                              <img src={visa} alt="payment" />
                             </label>
                           </div>
                         </div>
