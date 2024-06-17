@@ -1,6 +1,7 @@
 import React from "react";
 import signinimage from '../../images/signin-g.svg'
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 // import Grocerylogo from '../../images/Grocerylogo.png'
 
 const MyAccountSignIn = () => {
@@ -26,6 +27,9 @@ const MyAccountSignIn = () => {
             </nav>
           </div> */}
           {/* section */}
+          <>
+            <ScrollToTop/>
+            </>
           <section className="my-lg-14 my-8">
             <div className="container">
               {/* row */}

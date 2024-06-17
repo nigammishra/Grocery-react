@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MagnifyingGlass } from "react-loader-spinner";
+import ScrollToTop from "../ScrollToTop";
 
 const Contact = () => {
   // loading
@@ -30,6 +31,9 @@ const Contact = () => {
           </div>
         ) : (
           <>
+           <>
+            <ScrollToTop/>
+            </>
             <>
               {/* section */}
               <section className="my-lg-14 my-8">

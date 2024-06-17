@@ -11,6 +11,7 @@ import blog7 from "../../images/blog-img-7.jpg";
 import blog8 from "../../images/blog-img-8.jpg";
 import blog9 from "../../images/blog-img-9.jpg";
 import { Zoom } from "react-awesome-reveal";
+import ScrollToTop from "../ScrollToTop";
 
 const BlogCategory = () => {
   // loading
@@ -40,6 +41,9 @@ const BlogCategory = () => {
           </div>
         ) : (
           <>
+           <>
+            <ScrollToTop/>
+            </>
             <>
               <div>
                 {/* section */}

@@ -15,6 +15,7 @@ import product9 from "../../images/category-snack-munchies.jpg";
 import product10 from "../../images/category-tea-coffee-drinks.jpg";
 import graphics from "../../images/store-graphics.svg";
 import { MagnifyingGlass } from "react-loader-spinner";
+import ScrollToTop from "../ScrollToTop";
 const SingleShop = () => {
   // loading
   const [loaderStatus, setLoaderStatus] = useState(true);
@@ -43,6 +44,9 @@ const SingleShop = () => {
           </div>
         ) : (
           <>
+           <>
+        <ScrollToTop/>
+        </>
             <>
               {/* section*/}
               <div className="mt-4">

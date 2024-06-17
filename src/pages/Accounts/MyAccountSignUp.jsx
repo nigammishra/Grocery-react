@@ -1,10 +1,14 @@
 import React from "react";
 import signupimage from '../../images/signup-g.svg'
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 
 const MyAccountSignUp = () => {
   return (
     <div>
+       <>
+            <ScrollToTop/>
+            </>
       <>
         {/* section */}
         <section className="my-lg-14 my-8">

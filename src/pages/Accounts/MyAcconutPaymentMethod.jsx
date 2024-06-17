@@ -7,6 +7,7 @@ import mastercard from "../../images/mastercard.svg";
 import paypal from "../../images/paypal.svg";
 import visa from "../../images/visa.svg";
 import discover from "../../images/discover.svg";
+import ScrollToTop from "../ScrollToTop";
 
 const MyAcconutPaymentMethod = () => {
   // loading
@@ -19,6 +20,9 @@ const MyAcconutPaymentMethod = () => {
 
   return (
     <div>
+       <>
+            <ScrollToTop/>
+            </>
       <>
         <div>
           <section>

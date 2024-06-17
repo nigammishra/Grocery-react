@@ -11,6 +11,7 @@ import blog8 from "../../images/blog-img-8.jpg";
 import blog9 from "../../images/blog-img-9.jpg";
 import { MagnifyingGlass } from "react-loader-spinner";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import ScrollToTop from "../ScrollToTop";
 
 const Blog = () => {
   // loading
@@ -40,7 +41,9 @@ const Blog = () => {
           </div>
         ) : (
           <>
-            
+            <>
+            <ScrollToTop/>
+            </>
             <>
               <div>
                 {/* section */}

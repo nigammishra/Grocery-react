@@ -14,6 +14,7 @@ import product7 from "../../images/category-instant-food.jpg";
 import product8 from "../../images/category-pet-care.jpg";
 import product9 from "../../images/category-snack-munchies.jpg";
 import product10 from "../../images/category-tea-coffee-drinks.jpg";
+import ScrollToTop from "../ScrollToTop";
 
 function Dropdown() {
   const [openDropdowns, setOpenDropdowns] = useState([]);
@@ -52,6 +53,9 @@ color="#0aad0a"
       </div>
     ) : (
       <>
+       <>
+            <ScrollToTop/>
+            </>
     <div className="container ">
       
 

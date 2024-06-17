@@ -26,6 +26,7 @@ import SocialNetworksCarousel from "./SocialNetworksCarousel";
 import CaseStudySlider from "./CaseStudySlider";
 import { MagnifyingGlass } from "react-loader-spinner";
 import { Slide, Zoom } from "react-awesome-reveal";
+import ScrollToTop from "../ScrollToTop";
 
 const AboutUs = () => {
   // loading
@@ -55,6 +56,9 @@ const AboutUs = () => {
           </div>
         ) : (
           <>
+          <>
+          <ScrollToTop/>
+          </>
             <>
               {/* Hero */}
               <section className="position-relative pt-5">

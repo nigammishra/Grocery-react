@@ -7,6 +7,7 @@ import productimage17 from '../../images/product-img-17.jpg'
 import productimage18 from '../../images/product-img-18.jpg'
 import productimage19 from '../../images/product-img-19.jpg'
 import { MagnifyingGlass } from 'react-loader-spinner'
+import ScrollToTop from "../ScrollToTop";
 
 const ShopWishList = () => {
 
@@ -38,6 +39,9 @@ const ShopWishList = () => {
         </div>
       ) : (
         <>
+         <>
+        <ScrollToTop/>
+        </>
       <>
         {/* section */}
         <section className="my-14">

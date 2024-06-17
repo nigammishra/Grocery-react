@@ -1,10 +1,14 @@
 import React from "react";
 import forgetpassword from "../../images/fp-g.svg";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 
 const MyAccountForgetPassword = () => {
   return (
     <div>
+       <>
+            <ScrollToTop/>
+            </>
       <>
         {/* section */}
         <section className="my-lg-14 my-8">

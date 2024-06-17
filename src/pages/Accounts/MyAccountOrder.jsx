@@ -8,6 +8,7 @@ import productimg4 from "../../images/product-img-4.jpg";
 import productimg5 from "../../images/product-img-5.jpg";
 import productimg6 from "../../images/product-img-6.jpg";
 import { MagnifyingGlass } from "react-loader-spinner";
+import ScrollToTop from "../ScrollToTop";
 
 const MyAccountOrder = () => {
   // loading
@@ -20,6 +21,9 @@ const MyAccountOrder = () => {
 
   return (
     <div>
+       <>
+            <ScrollToTop/>
+            </>
       <>
         {/* section */}
         <section>

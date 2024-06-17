@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MagnifyingGlass } from "react-loader-spinner";
+import ScrollToTop from "../ScrollToTop";
 
 const MyAcconutSetting = () => {
   // loading
@@ -13,6 +14,9 @@ const MyAcconutSetting = () => {
 
   return (
     <div>
+       <>
+            <ScrollToTop/>
+            </>
       <>
         <div>
           {/* section */}

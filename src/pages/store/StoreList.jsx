@@ -12,6 +12,7 @@ import storeLogo9 from '../../images/stores-logo-9.svg';
 
 import { Slide, Zoom } from "react-awesome-reveal";
 import { MagnifyingGlass } from 'react-loader-spinner'
+import ScrollToTop from "../ScrollToTop";
 // import storelogo10 from '../images/store'
 // import storelogofrom '../images/store-graphics-2.svg'
 
@@ -47,6 +48,9 @@ const StoreList = () => {
         </div>
       ) : (
         <>
+         <>
+        <ScrollToTop/>
+        </>
       <>
         {/* section*/}
         <div className="mt-4">
