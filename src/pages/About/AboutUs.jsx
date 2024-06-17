@@ -77,15 +77,14 @@ const AboutUs = () => {
                       {/* Text */}
                       <Slide direction="down">
                       <h1 className="pb-2 pb-md-3">About Fresh Cart</h1>
+                      <h3 className="pb-2 pb-md-3">The Future of Grocery Delivery:</h3>
                       <p
                         className="fs-xl pb-4 mb-1 mb-md-2 mb-lg-3"
                         style={{ maxWidth: 526 }}
                       >
-                        We are a dedicated team of passionate product managers,
-                        full stack developers, UX/UI designers, QA engineers and
-                        marketing experts helping businesses of every size —
-                        from new startups to public companies — launch their
-                        projects using our software.
+                  By powering the future of grocery with our retail partners, 
+                  we give everyone access to the food they love and more time 
+                  to enjoy it together.
                       </p>
                       <img
                         src={clutch}
@@ -182,11 +181,13 @@ const AboutUs = () => {
                           className="d-block mb-4 mx-auto"
                         />
                         </Zoom>
+                        <Slide direction="up">
                         <h4 className="mb-2 pb-1">Creative Solutions</h4>
                         <p className="mx-auto" style={{ maxWidth: "336px" }}>
                           Sed morbi nulla pulvinar lectus tempor vel euismod
                           accumsan.
                         </p>
+                        </Slide>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide border-end-lg px-2">
@@ -199,11 +200,13 @@ const AboutUs = () => {
                           className="d-block mb-4 mx-auto"
                         />
                         </Zoom>
+                        <Slide direction="up">
                         <h4 className="mb-2 pb-1">Award Winning</h4>
                         <p className="mx-auto" style={{ maxWidth: "336px" }}>
                           Sit facilisis dolor arcu, fermentum vestibulum arcu
                           elementum imperdiet.
                         </p>
+                        </Slide>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide px-2">
@@ -216,11 +219,13 @@ const AboutUs = () => {
                           className="d-block mb-4 mx-auto"
                         />
                         </Zoom>
+                        <Slide direction="up">
                         <h4 className="mb-2 pb-1">Team of Professionals</h4>
                         <p className="mx-auto" style={{ maxWidth: "336px" }}>
                           Nam venenatis urna aenean quis feugiat et senectus
                           turpis.
                         </p>
+                        </Slide>
                       </div>
                     </SwiperSlide>
                   </div>
@@ -341,7 +346,9 @@ const AboutUs = () => {
                     <div className="info-whydiff">
                       <div className="section-title-left pt-80">
                         <h3 className="party" style={{ fontSize: "38px" }}>
+                          <Slide direction="down" delay={0.5}>
                           Our Partners
+                          </Slide>
                         </h3>
                       </div>
                     </div>
@@ -436,8 +443,10 @@ const AboutUs = () => {
                 <div className="position-relative bg-secondaryy rounded-3 py-5 mb-2">
                   <div className="row pb-2 py-md-3 py-lg-5 px-4 px-lg-0 position-relative zindex-3">
                     <div className="col-xl-3 col-lg-4 col-md-5 offset-lg-1">
+                      <Slide direction="down" delay={0.5}>
                       <p className="lead mb-2 mb-md-3">Ready to get started?</p>
                       <h2 className="h1 pb-3">Don’t Hesitate to Contact Us</h2>
+                      </Slide>
                     </div>
                     <form
                       className="col-lg-6 col-md-7 offset-xl-1 zindex-3 needs-validation"
@@ -491,12 +500,14 @@ const AboutUs = () => {
                           </div>
                         </div>
                       </div>
+                      
                       <button
                         type="submit"
                         className="btn btn-primary shadow-primary btn-lg"
                       >
                         Send request
                       </button>
+                       
                     </form>
                   </div>
                   {/* Pattern */}

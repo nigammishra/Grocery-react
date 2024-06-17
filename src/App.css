@@ -29741,3 +29741,19 @@ background-color: #f3f6ff;
   display: inline-block;
   cursor: pointer;
 }
+
+.partner-list{
+  align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0aad0a69;
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    margin: 10px;
+    /* width: 165px; */
+    border: 1px solid #0aad0a69;
+    object-fit: contain;
+}
+.partner{
+  padding: 15px;
+}
