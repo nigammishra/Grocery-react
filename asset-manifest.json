@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Grocery-react/static/css/main.d5afc5ee.css",
-    "main.js": "/Grocery-react/static/js/main.83355dd9.js",
+    "main.js": "/Grocery-react/static/js/main.b1370ef2.js",
     "static/js/453.19399770.chunk.js": "/Grocery-react/static/js/453.19399770.chunk.js",
     "static/media/team.gif": "/Grocery-react/static/media/team.1f5b908b7e041200fb7e.gif",
     "static/media/map.png": "/Grocery-react/static/media/map.782e7890e48d971d1984.png",
@@ -116,11 +116,11 @@
     "static/media/refresh-cw.svg": "/Grocery-react/static/media/refresh-cw.43544612fa4d22ea9b0bd3e62890ff7b.svg",
     "static/media/clock.svg": "/Grocery-react/static/media/clock.8472f2c480849ff2105d07416f1bb498.svg",
     "main.d5afc5ee.css.map": "/Grocery-react/static/css/main.d5afc5ee.css.map",
-    "main.83355dd9.js.map": "/Grocery-react/static/js/main.83355dd9.js.map",
+    "main.b1370ef2.js.map": "/Grocery-react/static/js/main.b1370ef2.js.map",
     "453.19399770.chunk.js.map": "/Grocery-react/static/js/453.19399770.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5afc5ee.css",
-    "static/js/main.83355dd9.js"
+    "static/js/main.b1370ef2.js"
   ]
 }
