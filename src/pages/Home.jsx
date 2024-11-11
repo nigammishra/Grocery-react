@@ -44,8 +44,8 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import ProductItem from "../ProductList/ProductItem";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import { Slide, Zoom } from "react-awesome-reveal";
 import { useEffect } from "react";
 // import { PulseLoader } from 'react-spinners';
@@ -76,7 +76,7 @@ const Home = () => {
   }, []);
 
   const settings1 = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -89,7 +89,7 @@ const Home = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -136,11 +136,11 @@ const Home = () => {
     autoplaySpeed: 2000,
   };
   const settings2 = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     initialSlide: 1,
     responsive: [
       {
@@ -149,7 +149,7 @@ const Home = () => {
           slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
       {

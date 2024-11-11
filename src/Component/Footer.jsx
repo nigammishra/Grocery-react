@@ -9,10 +9,12 @@ import paypal from "../images/paypal.svg";
 import visa from "../images/visa.svg";
 
 const Footer = () => {
+  let date = new Date();
+  let year = date.getFullYear();
   return (
     <div>
       <>
-        <footer className="footer">
+        <footer className="footer mt-8">
           <div className="overlay" />
           <div className="container">
             <div className="row footer-row">
@@ -307,12 +309,13 @@ const Footer = () => {
             <div className="container text-center">
               <div className="footer-copy">
                 <div className="copyright">
-                  © 2022 All Rights Reserved By
+                  © {year} All Rights Reserved By _
+                  
                   <Link
                     to="https://nigammishra.github.io/nigam-portfolio/"
                     target="_blank"
                   >
-                    @nigammishra
+                     @nigammishra
                   </Link>
                 </div>
               </div>

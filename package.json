@@ -23,6 +23,7 @@
     "react-spinners": "^0.13.8",
     "react-swiper": "^0.1.5",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.14.5",
     "swiper": "^11.1.4",
     "web-vitals": "^2.1.4"
   },
