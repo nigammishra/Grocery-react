@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Grocery-react/static/css/main.d5afc5ee.css",
-    "main.js": "/Grocery-react/static/js/main.b1370ef2.js",
+    "main.css": "/Grocery-react/static/css/main.c5cf0ef8.css",
+    "main.js": "/Grocery-react/static/js/main.ec649c01.js",
     "static/js/453.19399770.chunk.js": "/Grocery-react/static/js/453.19399770.chunk.js",
     "static/media/team.gif": "/Grocery-react/static/media/team.1f5b908b7e041200fb7e.gif",
     "static/media/map.png": "/Grocery-react/static/media/map.782e7890e48d971d1984.png",
@@ -102,12 +102,8 @@
     "index.html": "/Grocery-react/index.html",
     "static/media/visa.svg": "/Grocery-react/static/media/visa.23929e02ad52aa3ad90c325bb4c38891.svg",
     "static/media/stores-logo-7.svg": "/Grocery-react/static/media/stores-logo-7.d632881222d3549c30fbe304cbed9654.svg",
-    "static/media/slick.svg": "/Grocery-react/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/stores-logo-1.svg": "/Grocery-react/static/media/stores-logo-1.dcab137c48570e73f341eadad465816a.svg",
-    "static/media/slick.eot": "/Grocery-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Grocery-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/stores-logo-4.svg": "/Grocery-react/static/media/stores-logo-4.1b29130a3e881e29e87d5ee20db2336c.svg",
-    "static/media/slick.woff": "/Grocery-react/static/media/slick.295183786cd8a1389865.woff",
     "static/media/stores-logo-5.svg": "/Grocery-react/static/media/stores-logo-5.0345cb6f4f33893dbe30dd867351087c.svg",
     "static/media/package.svg": "/Grocery-react/static/media/package.4e8f7a1c0c0ba9b3429187fcf9f623c9.svg",
     "static/media/stores-logo-3.svg": "/Grocery-react/static/media/stores-logo-3.b19f702253419733bd033d38665c6578.svg",
@@ -115,12 +111,12 @@
     "static/media/gift.svg": "/Grocery-react/static/media/gift.2025af316960eb4a6fb38f2e7b780f0c.svg",
     "static/media/refresh-cw.svg": "/Grocery-react/static/media/refresh-cw.43544612fa4d22ea9b0bd3e62890ff7b.svg",
     "static/media/clock.svg": "/Grocery-react/static/media/clock.8472f2c480849ff2105d07416f1bb498.svg",
-    "main.d5afc5ee.css.map": "/Grocery-react/static/css/main.d5afc5ee.css.map",
-    "main.b1370ef2.js.map": "/Grocery-react/static/js/main.b1370ef2.js.map",
+    "main.c5cf0ef8.css.map": "/Grocery-react/static/css/main.c5cf0ef8.css.map",
+    "main.ec649c01.js.map": "/Grocery-react/static/js/main.ec649c01.js.map",
     "453.19399770.chunk.js.map": "/Grocery-react/static/js/453.19399770.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5afc5ee.css",
-    "static/js/main.b1370ef2.js"
+    "static/css/main.c5cf0ef8.css",
+    "static/js/main.ec649c01.js"
   ]
 }
