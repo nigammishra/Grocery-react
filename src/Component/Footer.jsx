@@ -160,7 +160,7 @@ const Footer = () => {
                     <div className="col">
                       <ul className="footer-link mb-0">
                         <li>
-                          <Link to=" ">
+                          <Link to="/Careers">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -168,7 +168,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/ShopCart">
+                          <Link to="/Coupons">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -200,7 +200,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/Contact">
+                          <Link to="/Faq">
                             <span>
                               <i className="fa fa-angle-right" />
                             </span>{" "}
@@ -244,7 +244,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/Contact">
+                          <Link to="/helpcenter">
                             <span>
                               <i className="fa fa-angle-right" />{" "}
                             </span>{" "}

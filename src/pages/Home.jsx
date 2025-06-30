@@ -50,6 +50,7 @@ import { Slide, Zoom } from "react-awesome-reveal";
 import { useEffect } from "react";
 // import { PulseLoader } from 'react-spinners';
 import { MagnifyingGlass } from "react-loader-spinner";
+import FAQ from "./FooterElements/Faq";
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -1572,6 +1573,9 @@ const Home = () => {
               </section>
             </>
             <>
+            <FAQ/>
+            </>
+            <>
               <div className="container">
                 <Slider {...settings2}>
                   {/* <div className="images swiper-slide p-4">
@@ -1819,6 +1823,8 @@ const Home = () => {
                 </Slider>
               </div>
             </>
+
+            
           </>
         )}
       </div>
