@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Grocery-react/static/css/main.c5cf0ef8.css",
-    "main.js": "/Grocery-react/static/js/main.ec649c01.js",
+    "main.css": "/Grocery-react/static/css/main.cfdf5e47.css",
+    "main.js": "/Grocery-react/static/js/main.3c42c8b8.js",
     "static/js/453.19399770.chunk.js": "/Grocery-react/static/js/453.19399770.chunk.js",
     "static/media/team.gif": "/Grocery-react/static/media/team.1f5b908b7e041200fb7e.gif",
     "static/media/map.png": "/Grocery-react/static/media/map.782e7890e48d971d1984.png",
@@ -111,12 +111,12 @@
     "static/media/gift.svg": "/Grocery-react/static/media/gift.2025af316960eb4a6fb38f2e7b780f0c.svg",
     "static/media/refresh-cw.svg": "/Grocery-react/static/media/refresh-cw.43544612fa4d22ea9b0bd3e62890ff7b.svg",
     "static/media/clock.svg": "/Grocery-react/static/media/clock.8472f2c480849ff2105d07416f1bb498.svg",
-    "main.c5cf0ef8.css.map": "/Grocery-react/static/css/main.c5cf0ef8.css.map",
-    "main.ec649c01.js.map": "/Grocery-react/static/js/main.ec649c01.js.map",
+    "main.cfdf5e47.css.map": "/Grocery-react/static/css/main.cfdf5e47.css.map",
+    "main.3c42c8b8.js.map": "/Grocery-react/static/js/main.3c42c8b8.js.map",
     "453.19399770.chunk.js.map": "/Grocery-react/static/js/453.19399770.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5cf0ef8.css",
-    "static/js/main.ec649c01.js"
+    "static/css/main.cfdf5e47.css",
+    "static/js/main.3c42c8b8.js"
   ]
 }
